@@ -13,4 +13,22 @@ const colorChangeVariants = {
     target: { backgroundColor: "#DB4848" }, // Target background color
   };
 
-export { fadeInVariants, colorChangeVariants, fadeOutVariants }
+const fadeIn = (x_val: number, y_val: number, scale_val: number) => {
+    // console.log(scale)
+    return {
+        hidden: {
+            x: x_val,
+            y: y_val,
+            opacity: 0,
+            scale: scale_val,
+        },
+        show: {
+            x: x_val,
+            y: y_val,
+            opacity: 1,
+            scale: scale_val,
+        },
+    };
+}
+
+export { fadeInVariants, colorChangeVariants, fadeOutVariants, fadeIn }
