@@ -42,7 +42,8 @@ const Home: React.FC = () => {
                     <Link to="/html">
                         <div className="cursor-pointer">
                             <motion.img
-                                src="src/assets/InnoD_Beige.svg"
+                                src="./src/assets/InnoD_Beige.svg"
+                                alt="InnoD Beige Logo"
                                 initial="hidden"
                                 animate="visible"
                                 variants={fadeInVariants}
@@ -79,7 +80,7 @@ const Home: React.FC = () => {
                 ) : (
                     <div className="opacity-50 ">
                         <motion.img
-                            src="src/assets/InnoD_Red.svg"
+                            src="./src/assets/InnoD_Red.svg"
                             alt="InnoD Red Logo"
                             initial={{ opacity: 0.5 }}
                             animate={logo ? "hidden" : `{{opacity: 0}}`}
@@ -135,7 +136,7 @@ const Home: React.FC = () => {
                     </div>
                     <div className="">
                         <motion.img
-                            src={"src/assets/Laptop.svg"}
+                            src={"./src/assets/Laptop.svg"}
                             alt="Laptop"
                             initial={{ y: 20, x: -20, opacity: 0, scale: 1 }}
                             animate={{ y: 20, x: -20, opacity: 1, scale: 1 }}

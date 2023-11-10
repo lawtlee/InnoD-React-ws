@@ -5,7 +5,7 @@ import HTML from './screens/Html'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/InnoD-React-ws/'>
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/HTML" element={<HTML/>}/>
